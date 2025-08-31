@@ -1,5 +1,6 @@
 import streamlit as st
 import requests
+import os
 from datetime import datetime
 from typing import Optional
 
@@ -39,9 +40,8 @@ VOICE_OPTIONS = {
 }
 
 # 🔑 Hardcoded API Keys (replace with your actual keys)
-GROQ_API_KEY = "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"
-MURF_API_KEY = "ap2_6df9887b-5d8d-4499-881e-ba6a571e4750"
-
+GROQ_API_KEY = st.secrets.get("GROQ_API_KEY", os.getenv("GROQ_API_KEY"))
+MURF_API_KEY = st.secrets.get("MURF_API_KEY", os.getenv("MURF_API_KEY"))
 # 🎭 Hardcoded System Prompt
 SYSTEM_PROMPT = "You are the doctor of the city. As a doctor, explain and diagnose health issues clearly."
 
