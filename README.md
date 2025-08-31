@@ -38,17 +38,17 @@ MoviePy
 📦 Installation
 
 Clone the repo:
-
+'''
 git clone https://github.com/your-username/murf-coding-challange.git
 cd murf-coding-challange
 
 
 Install dependencies:
-
+'''
 pip install -r requirements.txt
 
 🔑 API Keys Setup
-
+'''
 Create a .env file (or use Streamlit secrets.toml) with:
 
 GROQ_API_KEY=your_groq_api_key
@@ -58,9 +58,10 @@ MURF_API_KEY=your_murf_api_key
 For Streamlit Cloud → add these under Project Settings → Secrets.
 
 ▶️ Run the App
+'''
 streamlit run app.py
 
-
+'''
 Then open your browser at http://localhost:8501
  🎉
 
